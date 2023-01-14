@@ -44,21 +44,21 @@ class GameActivity : AppCompatActivity() {
                 }
                 imageCard.setImageResource(cardID)
                 if(trials==0){
-                    if (winCount.compareTo(2)>=0){
+                    if (winCount >= 2){
                         button.text="You Won"
-                        Toast.makeText(this,"You Win",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"You Win",Toast.LENGTH_SHORT).show()
                     }else{
                         button.text="You Loose"
-                        Toast.makeText(this,"You Loose",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"You Loose",Toast.LENGTH_SHORT).show()
                     }
                 }
             }else{
-                if (winCount.compareTo(2)>=0){
+                if (winCount >= 2){
                     button.text="You Won"
-                    Toast.makeText(this,"You Win",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"You Win",Toast.LENGTH_SHORT).show()
                 }else{
                     button.text="You Loose"
-                    Toast.makeText(this,"You Loose",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"You Loose",Toast.LENGTH_SHORT).show()
                 }
             }
         }

@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             val R12:RadioButton=dialogView.findViewById(R.id.Radio12)
             val R13:RadioButton=dialogView.findViewById(R.id.Radio13)
 
-            alertDialog.setView(dialogView).setPositiveButton("Start Game",
+            alertDialog.setTitle("Choose a card").setView(dialogView).setPositiveButton("Start Game",
                 DialogInterface.OnClickListener { dialog, which ->
                     if (R1.isChecked){
                         val intent=Intent(this,GameActivity::class.java)
