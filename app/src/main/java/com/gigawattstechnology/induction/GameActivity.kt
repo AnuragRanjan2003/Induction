@@ -44,7 +44,7 @@ class GameActivity : AppCompatActivity() {
                 }
                 imageCard.setImageResource(cardID)
                 if(trials==0){
-                    if (winCount >= 2){
+                    if (winCount >= 1){
                         button.text="You Won"
                         Toast.makeText(this,"You Win",Toast.LENGTH_SHORT).show()
                     }else{
@@ -53,7 +53,7 @@ class GameActivity : AppCompatActivity() {
                     }
                 }
             }else{
-                if (winCount >= 2){
+                if (winCount >= 1){
                     button.text="You Won"
                     Toast.makeText(this,"You Win",Toast.LENGTH_SHORT).show()
                 }else{
